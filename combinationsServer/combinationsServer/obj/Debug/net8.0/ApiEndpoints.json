@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "combinationsServer.Controllers.CombinationController",
+    "Method": "GetAllAPI",
+    "RelativePath": "api/Combination/GetAllAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "combinationsServer.Controllers.CombinationController",
+    "Method": "GetAllPrevAPI",
+    "RelativePath": "api/Combination/GetAllPrevAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "lastPageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "combinationsServer.Controllers.CombinationController",
+    "Method": "GetNextAPI",
+    "RelativePath": "api/Combination/GetNextAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "combinationsServer.Controllers.CombinationController",
+    "Method": "GetPageinationAPI",
+    "RelativePath": "api/Combination/GetPageinationAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "lastPageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "combinationsServer.Controllers.CombinationController",
+    "Method": "StartAPI",
+    "RelativePath": "api/Combination/StartAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "n",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

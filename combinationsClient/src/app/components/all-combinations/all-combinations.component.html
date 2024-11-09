@@ -1,0 +1,46 @@
+<ng-container>
+    <div *ngIf="!(loading$ | async); else loading">
+        <div *ngIf="(allNextCombinations$ | async) as nextCombinations; else nonCobination">
+            <div *ngFor="let com of nextCombinations; let l= last">
+                <div *ngIf="com">
+                    <h2>{{com.combinationNumber}}. [{{com.currentCombination}}]</h2>
+                </div>
+            </div>
+            <div *ngIf="(hasAllNext$ | async);else back">
+                <button mat-raised-button [disabled]="(numberPage$ | async)==1" class="button"
+                    (click)="getAllPreviousCombinations()">
+                    <mat-icon>arrow_back</mat-icon>
+                    Back
+                </button>
+                <button mat-raised-button class="button" (click)="getAllNextCombinations()">
+                    Next
+                    <mat-icon>arrow_forward</mat-icon>
+                </button>
+                <div> <button mat-raised-button class="button" (click)="BackToLastCombination()">
+                        <mat-icon>arrow_back</mat-icon>
+                        Back display a single combination
+                    </button></div>
+            </div>
+            <ng-template #back>
+                <button mat-raised-button class="button" (click)="BackToLastCombination()">
+                    <mat-icon>arrow_back</mat-icon>
+                    Back Home
+                </button>
+            </ng-template>
+            <div class="pagination-area"> <ngb-pagination [collectionSize]="(totalCombinations$ | async)?? 0"
+                    [pageSize]="pageSize ?? 1" [maxSize]="5" [rotate]="true" [page]="(numberPage$ | async )?? 1"
+                    (pageChange)="getByPagination($event)" [boundaryLinks]="true"></ngb-pagination>
+            </div>
+        </div>
+        <ng-template #nonCobination>
+            <h1>There are no other combinations</h1>
+            <button mat-raised-button class="button" (click)="BackToLastCombination()">
+                <mat-icon>arrow_back</mat-icon>
+                Back Home
+            </button>
+        </ng-template>
+    </div>
+    <ng-template #loading>
+        <mat-progress-bar mode="determinate" value="50" ></mat-progress-bar>
+    </ng-template>
+</ng-container>

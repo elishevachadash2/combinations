@@ -1,0 +1,18 @@
+/*.not-found-img{
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}*/
+
+.not-found-img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: contain; /* שינוי זה ישמור על פרופורציות התמונה ולא יחתוך אותה */
+}

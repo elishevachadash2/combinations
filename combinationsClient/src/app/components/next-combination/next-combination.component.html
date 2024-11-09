@@ -1,0 +1,10 @@
+<ng-container>
+    <div *ngIf="(currentCombination$ | async) as current">
+        <div *ngIf="(hasNext$ | async); else noMore">
+            <h1>Combination number {{current.combinationNumber}} is [{{current.currentCombination}}]</h1>
+        </div>
+    </div>
+    <ng-template #noMore>
+        <h1>There are no other combinations</h1>
+    </ng-template>
+</ng-container>

@@ -1,0 +1,21 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 32px;
+    color: rgb(44, 1, 138);
+    text-shadow: 1px 1.5px 1px rgba(0, 0, 0, 0.575);    
+}
+
+.body {
+    margin-bottom: 32px
+}
+.button-ok{
+     color: rgb(44, 1, 138);
+    background-color: #e6e9e6;
+    margin: 10px;
+
+}

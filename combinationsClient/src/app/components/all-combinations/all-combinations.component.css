@@ -1,0 +1,45 @@
+.button{
+    color: rgb(44, 1, 138);
+    background-color: #e6e9e6;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 60px;
+}
+
+.number:hover{
+    color: black(3, 3, 163);
+}
+.pagination-area{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 640px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+::ng-deep .pagination .page-item {
+    margin: 0 4px; 
+    cursor: pointer;
+    user-select: none;
+}
+
+::ng-deep .pagination .page-item .page-link {
+    color: rgb(44, 1, 138); 
+    background-color: #e6e9e6;
+    font-weight: 700; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.465); 
+    border-radius: 25px; 
+}
+
+::ng-deep .pagination .page-item.active .page-link {
+    background-color: rgb(44, 1, 138);
+    color: white; 
+    border-color:  rgb(44, 1, 138);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.465); 
+}
+
+

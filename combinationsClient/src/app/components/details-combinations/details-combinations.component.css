@@ -1,0 +1,11 @@
+.button-area{
+    margin-top: 40px;
+}
+.button-reset,
+.button-next,
+.button-all{
+    border-radius: 50px;
+    margin: 10px;
+    color: rgb(44, 1, 138);
+    background-color: #f1f4f1;
+}
